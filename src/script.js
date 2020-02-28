@@ -3,6 +3,15 @@ import textBalancer from 'text-balancer';
 
 import { USE_COVER_HED } from '../config.json';
 
+import mapboxgl from 'mapbox-gl';
+require('dotenv').config();
+
+mapboxgl.accessToken = process.env.MAPBOX_TOKEN;
+const map = new mapboxgl.Map({
+  container: 'charlotte',
+  style: 'mapbox://styles/mapbox/streets-v9'
+});
+
 // Fade in navbar at scroll trigger
 
 const navbar = document.getElementById('navbar');

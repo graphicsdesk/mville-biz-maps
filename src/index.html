@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./styles.scss">
   <link rel="shortcut icon" href="https://www.columbiaspectator.com/pb/resources/img/CDS_Favicon.ico" type="image/x-icon"/>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500&display=swap" rel="stylesheet">
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 <body>
@@ -19,9 +20,9 @@
       <switch expression="item.type">
         <case n="'graphic'">
           <div class="graphic">
-            <if condition="item.value.asset === 'graphic-name.html'">
-              <include src="graphic-name.html"></include>
-            </if>
+            <!-- <if condition="item.value.asset === 'graphic-name.html'"> -->
+              <!-- <include src="graphic-name.html"></include> -->
+            <!-- </if> -->
           </div>
         </case>
       </switch>
@@ -49,8 +50,8 @@
         </case>
         <case n="'graphic'">
           <div class="graphic">
-            <if condition="item.value.asset === 'graphic-name.html'">
-              <include src="graphic-name.html"></include>
+            <if condition="item.value.asset === 'maps.html'">
+              <include src="maps.html"></include>
             </if>
           </div>
         </case>
