@@ -1,30 +1,16 @@
 import enterView from 'enter-view';
 import textBalancer from 'text-balancer';
+import dotenv from 'dotenv';
+dotenv.config();
 
-import { USE_COVER_HED } from '../config.json';
+// Mapbox code
 
 import mapboxgl from 'mapbox-gl';
-require('dotenv').config();
 
 mapboxgl.accessToken = process.env.MAPBOX_TOKEN;
 const map = new mapboxgl.Map({
   container: 'charlotte',
   style: 'mapbox://styles/mapbox/streets-v9'
-});
-
-// Fade in navbar at scroll trigger
-
-const navbar = document.getElementById('navbar');
-enterView({
-  selector: USE_COVER_HED ? '.headline' : '.step-deck',
-  offset: USE_COVER_HED ? 1 : 0.957,
-  enter: () => {
-    navbar.classList.remove('only-logo');
-  },
-  exit: () => {    
-    navbar.classList.remove('show-nav-links');
-    navbar.classList.add('only-logo');
-  },
 });
 
 // Mobile navbar hamburger trigger
