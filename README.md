@@ -1,4 +1,4 @@
-# Mville-biz-maps
+# mville-biz-maps
 
 This story was created with [Spectate](https://github.com/spec-journalism/spectate).
 
