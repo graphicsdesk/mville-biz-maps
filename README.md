@@ -2,6 +2,10 @@
 
 This story was created with [Spectate](https://github.com/spec-journalism/spectate).
 
+## Prerequisites
+
+Create a `.env` file and set the value of `MAPBOX_TOKEN` to your Mapbox API token.
+
 ## Usage
 
 Make sure you have completed the setup and creation instructions for Spectate. To start the development server, run:
