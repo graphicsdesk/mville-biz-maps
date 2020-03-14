@@ -7,9 +7,7 @@ dotenv.config();
 
 import mapboxgl from 'mapbox-gl';
 
-mapboxgl.accessToken = 'pk.eyJ1IjoianNvbmthbyIsImEiOiJjanNvM2U4bXQwN2I3NDRydXQ3Z2kwbWQwIn0.JWAoBlcpDJwkzG-O5_r0ZA';
-
-
+mapboxgl.accessToken = process.env.MAPBOX_TOKEN;
 makeMap('floridita-map', 'Dino');
 makeMap('dino-map', 'Floridita');
 
